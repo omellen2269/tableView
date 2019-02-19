@@ -10,14 +10,19 @@ import UIKit
 
 class EmojiTableTableViewController: UITableViewController {
 
-    override func viewDidLoad() {
+    
+    var emojis: [Emoji] = [
+    Emoji(symbol: "😀", name: "Smiley Face", description: "A normal smilimg face", usage: "happiness"),
+    Emoji(symbol: "😂", name: "Laughing Face", description: "A face laughing so hard that it cries", usage: "laughter"),
+    Emoji(symbol: "🤩", name: "Star Eyes", description: "A face that is 'wowed'", usage: "Amazed"),
+    Emoji(symbol: "🐢", name: "Turtle", description: "Literally just a tutle, what do you think it is?", usage: "When your talking about turtles I guess")
+    
+    ]
+    
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
