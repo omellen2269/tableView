@@ -12,13 +12,14 @@
         <!--Root View Controller-->
         <scene sceneID="wHo-MO-9IQ">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MlF-Td-rNW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="kuQ-6w-c9D" customClass="EmojiTableTableViewController" customModule="tableView" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2PR-0W-FlJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="l47-l2-0Q1" style="IBUITableViewCellStyleDefault" id="WKd-YA-0l3">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="l47-l2-0Q1" style="IBUITableViewCellStyleDefault" id="WKd-YA-0l3">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WKd-YA-0l3" id="VNR-cS-Lte">
@@ -42,11 +43,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="cvZ-rg-BOQ"/>
-                    <connections>
-                        <outlet property="tableView" destination="2PR-0W-FlJ" id="7YY-Lf-veK"/>
-                    </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MlF-Td-rNW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="-133"/>
         </scene>
